@@ -13,6 +13,6 @@ service H2WorldService {
    * Looks up the most-spoken language in the given city based on its country,
    * along with the percentage of residents that speak it.
    */
-  string city_language(1:string city)
+  string cityLanguage(1:string city)
 
 }
