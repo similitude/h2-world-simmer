@@ -7,5 +7,8 @@ ENV H2_HOME /opt/h2
 ENV H2_DATA /opt/h2-data
 ENV H2_VERSION 1.4.182
 
-ADD /api /api
+# Install API dependencies.
+RUN apt-get update && apt-get install -qq python && apt-get clean
 
+# Add the API.
+ADD /api /api
