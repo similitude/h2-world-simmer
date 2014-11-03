@@ -3,6 +3,7 @@ H2 World DB Simmer Package
 
 [![Build Status](https://travis-ci.org/similitude/h2-world-simmer.svg?branch=master)](https://travis-ci.org/similitude/h2-world-simmer)
 [![Coverage Status](https://coveralls.io/repos/similitude/h2-world-simmer/badge.png)](https://coveralls.io/r/similitude/h2-world-simmer)
+[![DOI](https://zenodo.org/badge/6943/similitude/h2-world-simmer.png)](http://dx.doi.org/10.5281/zenodo.12532)
 
 A Simmer package for the [World](https://dev.mysql.com/doc/world-setup/en/)
 sample database in the [H2 DBMS](http://www.h2database.com/html/main.html).
