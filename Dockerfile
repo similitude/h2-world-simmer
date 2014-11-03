@@ -5,6 +5,7 @@ MAINTAINER Oliver Lade <oliver@similitude.org>
 
 ENV H2_HOME /opt/h2
 ENV H2_DATA /opt/h2-data
+ENV H2_VERSION 1.4.182
 
 ADD /api /api
 

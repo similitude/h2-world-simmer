@@ -7,9 +7,10 @@ class H2WorldServiceHandler(object):
         """
         Executes the SQL query against the database and returns the results.
         """
-        cmd = 'java -cp %s/bin/h2*.jar org.h2.tools.Shell -url jdbc:h2:%s ' \
-              '-sql "%s"' % (os.environ['H2_HOME'], os.environ['H2_DATA'], sql)
-        return subprocess.call(cmd)
+        env = os.environ
+        cmd = 'java -cp %s/bin/h2-%s.jar org.h2.tools.Shell -url jdbc:h2:%s' % (
+            env['H2_HOME'], env['H2_VERSION'], env['H2_DATA'])
+        return subprocess.check_output(cmd.split() + ['-sql', sql])
 
     def city_language(self, city):
         """
